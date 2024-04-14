@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=VT323&display=swap');
+body{
+    max-width: 100vw;
+    padding: 0px;
+}
+:root{
+    max-width: 100vw;
+    max-height: 100vh;
+    --CountryiginColor:rgb(63, 142, 10);
+    --categoryColor: rgb(142, 96, 10); 
+}
+.recipe-doesnt-exist{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/no-recipe.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'VT323',sans-serif;
+}
+.error-text{
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+}
+.other-errors{
+    font-family: 'VT323',sans-serif; 
+}
+.loading-page{
+    font-family: 'VT323',sans-serif;
+    font-size: 48px;
+}
+.detail-page{
+    display: flex;
+    justify-content: center;
+}
+.meal-details-container{
+    max-width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.go-back-to-homePage{
+    font-size: 20px;
+    width: fit-content;
+}
+.recipe-heading{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 48px;
+}
+.visual-and-requirements{
+    display: flex;
+    gap: 15px;
+}
+.recipe-thumbnail{
+    border-radius: 20px;
+    width: 60%;
+    border: 3px solid black;
+}
+.ingredients-and-measurements{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    gap: 3px;
+}
+.individual-ingredient , .misc{
+    padding: 0px 10px;
+    font-family: 'Poppins',sans-serif;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.category-and-area{
+    display: flex;
+    gap: 10px;
+}
+.recipe-Category{
+    border-color: var(--categoryColor);
+    color: var(--categoryColor);
+}
+.countryOfOrigin{
+    color: var(--CountryiginColor);
+    border-color:var(--CountryiginColor) ;
+}
+.recipe-instructions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.instruction-Heading{
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.instructions{
+    font-family: 'Noto Sans',sans-serif;
+}
+.youtube-links{
+    font-family: 'VT323',sans-serif;
+    font-size: 24px;
+    transition: transform 330ms ease-in-out;
+    
+}
+.youtube-links:hover{
+    transform: scale(1.001);
+}
+.youtube-links > a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition-property: all;
+    transition: 330ms ease-in-out;
+}
+.youtube-links > a:hover{
+    color: red;
+    transform: scale(1.05);
+}
