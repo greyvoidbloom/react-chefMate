@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './LandingPage.css'; // Import CSS for styling
+import './LandingPage.css';
 
 const MealSearch = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -60,6 +59,7 @@ const MealSearch = () => {
                     )}
                 </div>
             </div>
+            
 
     );
 };
